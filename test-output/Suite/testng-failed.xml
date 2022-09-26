@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testing.xml(failed)">
+    <classes>
+      <class name="Tests.TC_RegistrationTest_003">
+        <methods>
+          <include name="openApplication"/>
+          <include name="WithoutDataRegistration"/>
+          <include name="IncorrectConfirmUsernameField"/>
+          <include name="RegistrationwithImUser"/>
+          <include name="WithoutSelectingCheckBoxRegistration"/>
+        </methods>
+      </class> <!-- Tests.TC_RegistrationTest_003 -->
+      <class name="Tests.TC_LoginTest_001">
+        <methods>
+          <include name="login"/>
+          <include name="openApplication"/>
+          <include name="SubmitButtonWithoutData"/>
+        </methods>
+      </class> <!-- Tests.TC_LoginTest_001 -->
+      <class name="Tests.TC_LoginDDT_002">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openApplication"/>
+          <include name="login" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- Tests.TC_LoginDDT_002 -->
+    </classes>
+  </test> <!-- Testing.xml(failed) -->
+</suite> <!-- Failed suite [Suite] -->
