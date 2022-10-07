@@ -8,6 +8,10 @@
       <class name="Tests.TC_LoginTest_001"/>
       <class name="Tests.TC_LoginDDT_002"/>
       <class name="Tests.TC_RegistrationTest_003"/>
+      <class name="Tests.TC_TodolistTest_004"/>
+      <class name="Tests.TC_HomePageAppointmentTest_006"/>
+      <class name="Tests.TC_ReportsTest_005"/>
+      <class name="Tests.TC_AppointmentCalenderTest_007"/>
     </classes>
   </test> <!-- Testing.xml -->
 </suite> <!-- Suite -->

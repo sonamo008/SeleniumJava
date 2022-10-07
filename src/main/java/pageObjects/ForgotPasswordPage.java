@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ForgotPasswordPage {
 
-	WebDriver driver;
+	//WebDriver driver;
 
 	public ForgotPasswordPage(WebDriver driver) {
-		this.driver = (WebDriver) driver;
+		//this.driver = (WebDriver) driver;
 		PageFactory.initElements(driver, this);
 
 	}
@@ -31,10 +31,10 @@ public class ForgotPasswordPage {
 		return forgotpassword;
 	}
 
-	public WebDriver getDriver() {
-		return driver;
+	//public WebDriver getDriver() {
+		//return driver;
 
-	}
+	//}
 
 	public WebElement getUsernamefield() {
 		return usernamefield;

@@ -54,27 +54,122 @@ public class TC_HomePageAppointmentTest_006 extends Base {
 		Thread.sleep(2000);
 		hp.getAddAppointmentButton().click();
 		Thread.sleep(3000);
+
+	}
+
+	@Test
+	public void CancelAppointment() throws InterruptedException {
+
+		LoginPage lp = new LoginPage(driver);
+		lp.getUsernamefield().sendKeys("sonamo008@aanksolutions.in");
+		lp.getPasswordfield().sendKeys("sonam29");
+		lp.getSubmitButton().submit();
+
+		Thread.sleep(2000);
+
+		HomePageAppointment hp = new HomePageAppointment(driver);
 		hp.getCancelExistingAppointment().click();
 		log.debug("Clicked on  x ");
 		Thread.sleep(3000);
+
+	}
+
+	@Test
+	public void EditExistingAppointment() throws InterruptedException {
+		LoginPage lp = new LoginPage(driver);
+		lp.getUsernamefield().sendKeys("sonamo008@aanksolutions.in");
+		lp.getPasswordfield().sendKeys("sonam29");
+		lp.getSubmitButton().submit();
+
+		Thread.sleep(2000);
+
+		HomePageAppointment hp = new HomePageAppointment(driver);
 		hp.getEditExistingAppointment().click();
 		log.debug("clicked on Edit option");
+		Thread.sleep(3000);
+		hp.getMobileField().clear();
+		Thread.sleep(3000);
+		hp.getMobileField().sendKeys("8087366686");
 		Thread.sleep(3000);
 		hp.getUpdateButton().click();
 		log.debug("clicked on Update Button");
 		Thread.sleep(3000);
-		hp.getSMSReminder();
+
+	}
+
+	@Test
+	public void ClickSMSReminder() throws InterruptedException {
+		LoginPage lp = new LoginPage(driver);
+		lp.getUsernamefield().sendKeys("sonamo008@aanksolutions.in");
+		lp.getPasswordfield().sendKeys("sonam29");
+		lp.getSubmitButton().submit();
+
+		Thread.sleep(2000);
+
+		HomePageAppointment hp = new HomePageAppointment(driver);
+		hp.getSMSReminder().click();
 		log.debug("Clicking on SMS Reminder");
 		Thread.sleep(3000);
-	}
-		
-		@AfterMethod
-		public void tearDown() {
-			driver.close();
-		}
-		
 
 	}
 
+	@Test
+	public void ClickAgainSMSReminder() throws InterruptedException {
 
+		LoginPage lp = new LoginPage(driver);
+		lp.getUsernamefield().sendKeys("sonamo008@aanksolutions.in");
+		lp.getPasswordfield().sendKeys("sonam29");
+		lp.getSubmitButton().submit();
 
+		Thread.sleep(2000);
+
+		HomePageAppointment hp = new HomePageAppointment(driver);
+		hp.getClickingplus().click();
+		log.debug("Clicked Plus Sign");
+		hp.getNameField().sendKeys("Sohit");
+		log.debug("Entered Name");
+		Thread.sleep(2000);
+		hp.getLastNameField().sendKeys("Jain");
+		log.debug("Entered LastName");
+		Thread.sleep(2000);
+		hp.getVisitReasonField().sendKeys("Fever1");
+		log.debug("Entered VisitReason");
+		Thread.sleep(2000);
+		hp.getMobileField().sendKeys("8087366617");
+		log.debug("Entered MobileNo.");
+		Thread.sleep(2000);
+		hp.getSMSReminder().click();
+		log.debug("Clicking again on SMS Reminder");
+		Thread.sleep(3000);
+	}
+
+	@Test
+	public void EditingPhoneNumber() throws InterruptedException {
+		LoginPage lp = new LoginPage(driver);
+		lp.getUsernamefield().sendKeys("sonamo008@aanksolutions.in");
+		lp.getPasswordfield().sendKeys("sonam29");
+		lp.getSubmitButton().submit();
+
+		Thread.sleep(2000);
+
+		HomePageAppointment hp = new HomePageAppointment(driver);
+		hp.getEditExistingAppointment().click();
+		log.debug("clicked on Edit option");
+		Thread.sleep(3000);
+		hp.getMobileField().sendKeys("8087366686");
+		log.debug("Entered MobileNo.");
+		Thread.sleep(2000);
+		hp.getUpdateButton().click();
+		log.debug("clicked on Update Button");
+		Thread.sleep(3000);
+		hp.getSMSReminder().click();
+		log.debug("Clicking again on SMS Reminder");
+		Thread.sleep(3000);
+	}
+
+	@AfterMethod
+	public void tearDown() {
+		driver.close();
+	}
+
+}

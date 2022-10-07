@@ -2,57 +2,23 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-26T15:31:04 IST" name="Default suite" finished-at="2022-09-26T15:31:41 IST" duration-ms="37128">
+  <suite started-at="2022-10-07T15:34:46 IST" name="Default suite" finished-at="2022-10-07T15:35:09 IST" duration-ms="22642">
     <groups>
     </groups>
-    <test started-at="2022-09-26T15:31:04 IST" name="Default test" finished-at="2022-09-26T15:31:41 IST" duration-ms="37128">
-      <class name="Tests.TC_HomePageAppointmentTest_006">
-        <test-method is-config="true" signature="openApplication()[pri:0, instance:Tests.TC_HomePageAppointmentTest_006@6fd83fc1]" started-at="2022-09-26T15:31:04 IST" name="openApplication" finished-at="2022-09-26T15:31:13 IST" duration-ms="9181" status="PASS">
+    <test started-at="2022-10-07T15:34:46 IST" name="Default test" finished-at="2022-10-07T15:35:09 IST" duration-ms="22642">
+      <class name="Tests.TC_AddPatientTest_009">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:Tests.TC_AddPatientTest_009@506ae4d4]" started-at="2022-10-07T15:34:46 IST" name="openApplication" finished-at="2022-10-07T15:34:59 IST" duration-ms="12745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method signature="Appointment()[pri:0, instance:Tests.TC_HomePageAppointmentTest_006@6fd83fc1]" started-at="2022-09-26T15:31:13 IST" name="Appointment" finished-at="2022-09-26T15:31:41 IST" duration-ms="27673" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='nextAppointment_edit__teObG']"}
-  (Session info: chrome=105.0.5195.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'HP1', ip: '192.168.0.119', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [85e2e2db4980b90abea026b1a60181e1, findElement {using=xpath, value=//a[@class='nextAppointment_edit__teObG']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53040}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53040/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 85e2e2db4980b90abea026b1a60181e1]]>
-            </message>
+        <test-method signature="AddPatient()[pri:0, instance:Tests.TC_AddPatientTest_009@506ae4d4]" started-at="2022-10-07T15:34:59 IST" name="AddPatient" finished-at="2022-10-07T15:35:08 IST" duration-ms="9572" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='nextAppointment_edit__teObG']"}
-  (Session info: chrome=105.0.5195.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'HP1', ip: '192.168.0.119', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [85e2e2db4980b90abea026b1a60181e1, findElement {using=xpath, value=//a[@class='nextAppointment_edit__teObG']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53040}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53040/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 85e2e2db4980b90abea026b1a60181e1
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+              <![CDATA[java.lang.NullPointerException
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at com.sun.proxy.$Proxy31.click(Unknown Source)
-at Tests.TC_HomePageAppointmentTest_006.Appointment(TC_HomePageAppointmentTest_006.java:60)
+at Tests.TC_AddPatientTest_009.AddPatient(TC_AddPatientTest_009.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,15 +49,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Appointment -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.TC_HomePageAppointmentTest_006@6fd83fc1]" started-at="2022-09-26T15:31:41 IST" name="tearDown" finished-at="2022-09-26T15:31:41 IST" duration-ms="196" status="PASS">
+        </test-method> <!-- AddPatient -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.TC_AddPatientTest_009@506ae4d4]" started-at="2022-10-07T15:35:08 IST" name="tearDown" finished-at="2022-10-07T15:35:09 IST" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Tests.TC_HomePageAppointmentTest_006 -->
+      </class> <!-- Tests.TC_AddPatientTest_009 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

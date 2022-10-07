@@ -30,7 +30,7 @@ public class TodolistPage {
 	@FindBy(xpath = "//button[text()='Add Task']")
 	private WebElement Addtask;
 
-	@FindBy(xpath = "//*[@id=\"root\"]/div/main/div/div/div[2]/div/div[2]/div/div[3]/div[1]/span[2]/a[2]")
+	@FindBy(xpath = "//button[@class='react-datepicker__close-icon']")
 	private WebElement withoutDueDate;
 
 	@FindBy(xpath = "//*[@id=\"root\"]/div/main/div/div/div[2]/div/div[2]/div/div[1]/div/a")
@@ -44,6 +44,12 @@ public class TodolistPage {
 
 	@FindBy(xpath = "//a[text( )='View Completed Tasks']")
 	private WebElement ViewCompletedTask;
+
+	@FindBy(xpath = "//a[text( )='View Open Tasks']")
+	private WebElement ViewOpenTask;
+	
+	@FindBy(xpath="//input[@value='09/28/2022, 2:20 PM']")
+	private WebElement DateSelect;
 
 	public WebDriver getDriver() {
 		return driver;
@@ -80,4 +86,14 @@ public class TodolistPage {
 	public WebElement getViewCompletedTask() {
 		return ViewCompletedTask;
 	}
+
+	public WebElement getViewOpenTask() {
+		return ViewOpenTask;
+	}
+
+	public WebElement getDateSelect() {
+		return DateSelect;
+	}
+	
+	
 }

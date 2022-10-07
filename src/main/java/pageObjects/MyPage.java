@@ -19,7 +19,7 @@ public class MyPage {
       WebElement editaaccinfo;
       
       public WebElement getEditaccinfo() {
-    	  return getEditaccinfo();
+    	  return editaaccinfo;
       }
       
       

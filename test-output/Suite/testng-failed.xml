@@ -3,10 +3,40 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Testing.xml(failed)">
     <classes>
-      <class name="Tests.TC_RegistrationTest_003">
+      <class name="Tests.TC_ReportsTest_005">
+        <methods>
+          <include name="PatientsTab"/>
+          <include name="openApplication"/>
+          <include name="Reports"/>
+          <include name="tearDown"/>
+          <include name="Cancel"/>
+        </methods>
+      </class> <!-- Tests.TC_ReportsTest_005 -->
+      <class name="Tests.TC_AppointmentCalenderTest_007">
         <methods>
           <include name="openApplication"/>
+          <include name="ExistingAppointment"/>
+          <include name="NewAppointment"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.TC_AppointmentCalenderTest_007 -->
+      <class name="Tests.TC_TodolistTest_004">
+        <methods>
+          <include name="ViewCompletedTasks"/>
+          <include name="ViewOpenTask"/>
+          <include name="tearDown"/>
+          <include name="WithDueDate"/>
+          <include name="Todolist"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- Tests.TC_TodolistTest_004 -->
+      <class name="Tests.TC_RegistrationTest_003">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openApplication"/>
+          <include name="NotConfirmUsernameField"/>
           <include name="WithoutDataRegistration"/>
+          <include name="Registration"/>
           <include name="IncorrectConfirmUsernameField"/>
           <include name="RegistrationwithImUser"/>
           <include name="WithoutSelectingCheckBoxRegistration"/>
@@ -26,6 +56,16 @@
           <include name="login" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- Tests.TC_LoginDDT_002 -->
+      <class name="Tests.TC_HomePageAppointmentTest_006">
+        <methods>
+          <include name="ClickAgainSMSReminder"/>
+          <include name="ClickSMSReminder"/>
+          <include name="EditingPhoneNumber"/>
+          <include name="openApplication"/>
+          <include name="tearDown"/>
+          <include name="EditExistingAppointment"/>
+        </methods>
+      </class> <!-- Tests.TC_HomePageAppointmentTest_006 -->
     </classes>
   </test> <!-- Testing.xml(failed) -->
 </suite> <!-- Failed suite [Suite] -->

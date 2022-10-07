@@ -2,6 +2,7 @@ package Tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -61,6 +62,7 @@ public class TC_LoginTest_001 extends Base {
 		}
 
 		Assert.assertTrue(mp.getEditaccinfo().isDisplayed());
+		
 	}
 	
 	@Test(priority=2)
@@ -91,8 +93,10 @@ public class TC_LoginTest_001 extends Base {
 		}
 
 		Assert.assertTrue(mp.getEditaccinfo().isDisplayed());
+		
 	}
 		
 	
 
 }
+

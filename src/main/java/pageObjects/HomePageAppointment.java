@@ -33,7 +33,7 @@ public class HomePageAppointment {
 	@FindBy(xpath = "//button[text( )='Add Appointment']")
 	WebElement AddAppointmentButton;
 
-	@FindBy(linkText = "X")
+	@FindBy(xpath = "//a[@title='Cancel']")
 	WebElement CancelExistingAppointment;
 
 	@FindBy(xpath = "//a[@class='nextAppointment_edit__teObG']")
@@ -42,8 +42,10 @@ public class HomePageAppointment {
 	@FindBy(xpath = "//button[@id='cursorStyle']")
 	WebElement UpdateButton;
 	
-	@FindBy(xpath="//button[@class='nextAppointment_smsnotification__3AA2j']")
+	@FindBy(xpath="//button[@title='Send Reminder SMS']")
 	WebElement SMSReminder;
+	
+
 
 	public WebElement getClickingplus() {
 		return Clickingplus;
